@@ -1,0 +1,22 @@
+
+:host {
+
+  /deep/ .primeng-calendar {
+    position: relative;
+    left: -15px;
+
+    .ui-datepicker {
+      // Account for calendar icon
+      width: calc(100% + 25px);
+    }
+
+    .primeng-calendar-input {
+      width: 230px;
+      position: relative;
+      color: #3b3a3a;
+      padding-left: 10px;
+      font-family: 'Open Sans', sans-serif;
+      background-color: transparent;
+    }
+  }
+}

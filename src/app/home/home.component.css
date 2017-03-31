@@ -1,0 +1,63 @@
+header {
+  font-family: Arial, sans-serif;
+  font-size: .9em;
+  text-align: center;
+}
+
+header a:link, header a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.sd-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.sd-underline {
+  height: 2px;
+  border-bottom: 2px solid black;
+  margin-bottom: 2px;
+}
+
+.outer-container {
+  position: relative;
+  margin: 0 auto;
+  width: 900px;
+}
+
+.main-content {
+  padding-top: 45px;
+  text-align: center;
+}
+
+.feature-list {
+  margin: 0;
+}
+
+.feature-item {
+  padding: 3px 0;
+}
+
+.selected-date-container {
+  margin-bottom: 15px;
+}
+
+.information {
+  margin-top: 35px;
+  text-align: left;
+}
+
+.sd-title {
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+.source-file-text {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.second-line {
+  margin-top: 15px;
+}

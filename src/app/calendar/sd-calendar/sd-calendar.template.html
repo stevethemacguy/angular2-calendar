@@ -1,0 +1,24 @@
+<label class="sd-label" [hidden]="!label" [title]="title">
+  <span>{{label}}</span>
+</label>
+<p-calendar
+  [(ngModel)]="value"
+  [class.required-field-empty]="isEmpty() && isRequired"
+  [defaultDate]="defaultDate"
+  [disabled]="readonly"
+  [showOnFocus]="showOnFocus"
+  [inputStyleClass]="'primeng-calendar-input'"
+  [monthNavigator]="monthNavigator"
+  [minDate]="minDate"
+  [maxDate]="maxDate"
+  [placeholder]="'mm/dd/yyyy'"
+  [required]="isRequired"
+  [readonlyInput]="readOnlyInput"
+  [showIcon]="showIcon"
+  [styleClass]="'primeng-calendar'"
+  [yearNavigator]="yearNavigator"
+  [yearRange]="yearRange || '1870:3000'"
+  (onSelect)="_handleSelect($event)"
+  (onBlur)="_handleBlur($event)"
+>
+</p-calendar>

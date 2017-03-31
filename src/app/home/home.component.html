@@ -1,0 +1,42 @@
+<div class="outer-container">
+  <header>
+    <span class="sd-name">STEVEN J. DUNN</span>
+    <div class="sd-underline"></div>
+    <div class="contact-information">
+      <span>407 Santa Louisa | Irvine, CA 92606 | 916-397-1598 | </span>
+      <a href="mailto:Steve@sdunn.net">Steve@sdunn.net</a>
+      <span> | </span>
+      <a href="https://www.linkedin.com/in/dunnsteven/" target="_blank">Linkedin.com/in/dunnsteven</a>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="selected-date-container">
+      <span *ngIf="selectedDate">You have selected: {{selectedDate|date}}</span>
+      <span *ngIf="!selectedDate">Please Select a Date</span>
+    </div>
+    <sd-calendar [(ngModel)]="selectedDate" name="Choose a Date" label="" #pCalendar
+                 [defaultDate]="selectedDate"
+                 (handleSelect)="update()"
+                 [isRequired]="true"
+                 [allowFutureDates]="true">
+    </sd-calendar>
+    <div class="information">
+      <p class="sd-title">What is this?</p>
+      <p>Sd-calendar is a reusable date-picker component that can be easily integrated into any Angular 2 application. It was created with Angular 2 and Typescript
+         and extends the <a href="https://www.primefaces.org/primeng/#/calendar" target="_blank"> PrimeNG</a> calendar component by adding the following features:</p>
+      <ul class="feature-list">
+        <li class="feature-item">Input masking to prevent basic user errors</li>
+        <li class="feature-item">Automatic formatting to ensure the underlying model is always valid</li>
+        <li class="feature-item">Optional date range restriction</li>
+      </ul>
+      <p class="sd-title second-line">What problem does this fix?</p>
+      <p>The client's inputs were broken in Safari and their entire application was unusable in IE 11. The problem was the use of
+        <code>input type="date"</code> inputs, which have poor <a href="http://caniuse.com/#search=date" target="_blank">browser support</a>.</p>
+      <p>Sd-calendar fixes these problems, while dramatically improving the user experience and adding error prevention.</p>
+      <p class="sd-title">How do I view the Source Code?</p>
+      <p class="source-file-text">The source code for sd-calendar can be found under src > app > calendar, and consists of the following 4 files:</p>
+      <p class="source-file-text">sd-calendar-input.component.ts, sd-calendar-input.template.html, sd-calendar-input.style.scss, and utils.service.ts.</p>
+      <p>All other files in the repository are from the <a href="https://github.com/AngularClass/angular2-webpack-starter" target="_blank">Angular2 Webpack Starter Kit</a></p>
+    </div>
+  </div>
+</div>
